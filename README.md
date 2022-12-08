@@ -3,8 +3,7 @@
 <p align="center">
   <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#hammer_and_wrench">How To Edit and Build CSS</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-license">License</a>
+  <a href="#hammer_and_wrench-how-to-edit-and-build-css">How To Edit and Build CSS</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
 ![CineFX](https://i.imgur.com/NiwKfCM.jpg)
@@ -69,7 +68,3 @@ and a new file will be generated in public\css\main.css
 go back to pages\_app.js, comment "import '../styles/globals.css';"
 and uncomment "'../public/css/main.css';"
 ```
-
-## :memo: License
-
-This project is under the MIT license. See the [LICENSE](https://github.com/UrielGui/best-cakes-shop/blob/master/LICENSE) for more information.
