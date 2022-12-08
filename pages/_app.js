@@ -1,5 +1,5 @@
-import '../styles/globals.css';
-// import '../public/css/main.css';
+// import '../styles/globals.css';
+import '../public/css/main.css';
 import '../i18n';
 
 function MyApp({ Component, pageProps }) {
