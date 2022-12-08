@@ -35,7 +35,7 @@ export default function Faq() {
     <section id='faq' className='py-10 text-base'>
       <Image
         src='/img/green-light-background.png'
-        alt={t('how-it-works.step-by-step-img-alt-1')}
+        alt={t('about.step-by-step-img-alt-1')}
         className='absolute w-1/5 h-[100vh] left-auto right-[0%] max-w-sm max-h-[60rem] -z-50'
         width={200}
         height={100}

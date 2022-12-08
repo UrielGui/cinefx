@@ -9,7 +9,7 @@ export default function MobileMenu() {
   const { t } = useTranslation();
   const [openMenu, setOpenMenu] = useState(false);
   return (
-    <div className='xl:hidden flex text-base'>
+    <div className='xl:hidden flex text-base py-6 default-container'>
       <div className='flex flex-grow place-items-center'>
         <span className='px-2'>
           <Image src='/img/logo.png' alt={t('head.title')} width={180} height={100} />
@@ -26,7 +26,7 @@ export default function MobileMenu() {
       >
         <ul className='flex flex-col flex-grow place-items-center space-y-3'>
           <li className='px-2 cursor-pointer'>
-            <Link to='how-it-works' smooth={true} onClick={() => setOpenMenu(!openMenu)}>
+            <Link to='about' smooth={true} onClick={() => setOpenMenu(!openMenu)}>
               {t('header.nav.option-1')}
             </Link>
           </li>
@@ -48,7 +48,7 @@ export default function MobileMenu() {
             </Link>
           </li>
           <li className='px-2 cursor-pointer'>
-            <Link2 href='https://central.caioservices.tech/index.php?rp=/login'>
+            <Link2 href='#'>
               <button type='button' className='bg-defaultBlue rounded-md py-1 px-5 mt-8'>
                 {t('header.nav.option-5')}
               </button>
