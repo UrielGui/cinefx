@@ -11,6 +11,7 @@ module.exports = {
         defaultPink: '#DF0B7D',
         defaultBlack: '#1C1E1F',
         defaultBlack2: '#242327',
+        defaultBlack3: '#1D1C20',
         defaultGreen: '#0f948e',
         defaultCyan: '#10A4C4',
       },
