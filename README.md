@@ -9,7 +9,7 @@
 ![CineFX](https://i.imgur.com/NiwKfCM.jpg)
 
 <p align="center">
-  <a href="https://best-cakes-shop.vercel.app/" target="_blank">
+  <a href="https://cinefx.vercel.app/" target="_blank">
     <img alt="Demo on Netlify" height="60px" width="160px" src="https://i.imgur.com/CoGI4YX.png">
   </a>
 </p>
