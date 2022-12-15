@@ -20,7 +20,9 @@ export default function Faq() {
     return (
       <svg
         xmlns='http://www.w3.org/2000/svg'
-        className={`${id === open ? ' rotate-270' : 'rotate-30'} absolute top-[26px]  h-5 w-5 transition-transform`}
+        className={`${
+          id === open ? ' rotate-270 top-[21px]' : 'rotate-30'
+        } absolute top-[25px]  h-5 w-5 transition-transform`}
         fill='none'
         viewBox='0 0 24 24'
         stroke='currentColor'
@@ -50,7 +52,7 @@ export default function Faq() {
               {<Icon id={1} open={open} />}
               <h2 className='ml-8'>{t('faq.questions.question-1')}</h2>
             </AccordionHeader>
-            <AccordionBody className='p-8 !opacity-50'>{t('faq.answers.answer-1')}</AccordionBody>
+            <AccordionBody className='p-8 mt-4 !opacity-50'>{t('faq.answers.answer-1')}</AccordionBody>
             <hr className='border-slate-400 border-solid border-1 my-5' />
           </Accordion>
           <Accordion open={open === 2} animate={customAnimation} icon={''}>
