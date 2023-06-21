@@ -49,8 +49,8 @@ export default function Pricing2() {
                 </button>
               </Link>
             </div>
-            <div className='mb-8 md:mb-0 place-self-center	'>
-              <Image src='/img/management-panel.png' alt='management panel' width={500} height={500} />
+            <div className='mb-8 md:mb-0 place-self-center'>
+              <Image className='rounded-xl' src='/img/dashboard.png' alt='dashboard' width={500} height={500} />
             </div>
           </div>
         </div>
