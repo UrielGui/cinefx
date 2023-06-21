@@ -1,8 +1,8 @@
 {
   "translation": {
     "head": {
-      "title": "testeeeee",
-      "description": "Movie Streaming Service"
+      "title": "CineFX - Movie Streaming Service",
+      "description": "Movie Streaming Service Template"
     },
     "header": {
       "nav": {
@@ -117,7 +117,7 @@
     "footer": {
       "copyright": {
         "name": "CineFX",
-        "all-rights-reserved": "All rights reserved. Present by Uriel Guimarães"
+        "all-rights-reserved": "All rights reserved."
       }
     }
   }
