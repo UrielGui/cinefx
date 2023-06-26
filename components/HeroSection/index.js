@@ -14,7 +14,7 @@ export default function HeroSection() {
           <h3 className='mt-2 2xl:text-3xl'>{t('hero-section.subtitle')}</h3>
           <div className='mt-12'>
             <Link href='#'>
-              <button type='button' className='bg-defaultBlue rounded-md py-4 px-10 xl:px-32 lg:px-8 hover:opacity-80'>
+              <button type='button' className='bg-defaultBlue rounded-md py-4 px-10 xl:px-28 lg:px-8 hover:opacity-80'>
                 {t('hero-section.button')}
               </button>
             </Link>
