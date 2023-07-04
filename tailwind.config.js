@@ -2,6 +2,7 @@ const plugin = require('tailwindcss/plugin');
 
 module.exports = {
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -14,6 +15,8 @@ module.exports = {
         defaultBlack3: '#1D1C20',
         defaultGreen: '#0f948e',
         defaultCyan: '#10A4C4',
+        lightBG: '#ECEAF4',
+        lightBG2: '#DDEBF8',
       },
       fontFamily: {
         sans: ['OpenSans', 'sans-serif'],
@@ -53,6 +56,9 @@ module.exports = {
         },
         body: {
           background: '#1C1E1F',
+          color: '#fff',
+        },
+        button: {
           color: '#fff',
         },
         '.default-container': {
