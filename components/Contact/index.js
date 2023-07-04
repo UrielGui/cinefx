@@ -4,7 +4,10 @@ import Link from 'next/link';
 export default function Contact() {
   const { t } = useTranslation();
   return (
-    <section id='contact' className='pb-10 text-base'>
+    <section
+      id='contact'
+      className='pb-10 text-base bg-lightBG dark:bg-defaultBlack2 text-defaultBlack dark:text-inherit'
+    >
       <div className='default-container'>
         <div className='text-center flex flex-col items-center py-6'>
           <h1 className='text-base'>{t('contact.title')}</h1>

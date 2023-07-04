@@ -6,10 +6,10 @@ export default function HeroSection() {
   return (
     <section
       id='hero-section'
-      className='lg:bg-hero-section-background bg-hero-section-mobile-background bg-no-repeat bg-center bg-cover py-20'
+      className='bg-lightBG dark:bg-defaultBlack2 text-defaultBlack dark:text-inherit lg:bg-hero-section-background bg-hero-section-mobile-background bg-no-repeat bg-center bg-cover py-20'
     >
       <div className='default-container'>
-        <div className='py-6 sm:py-14 lg:pr-20 text-3xl lg:w-2/5 text-center'>
+        <div className='py-6 sm:py-14 lg:pr-20 text-3xl lg:w-2/5 text-center text-white lg:text-defaultBlack dark:text-white'>
           <h1 className='2xl:text-4xl'>{t('hero-section.title')}</h1>
           <h3 className='mt-2 2xl:text-3xl'>{t('hero-section.subtitle')}</h3>
           <div className='mt-12'>

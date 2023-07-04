@@ -25,12 +25,12 @@ export default function PriceList({ inputChecked }) {
     <div className='w-full flex justify-between mt-8 lg:mt-20 lg:flex-row flex-col place-items-center'>
       <div className='w-72 sm:w-96 flex flex-col border-defaultGreen border-4 rounded-2xl'>
         <div className='py-6 bg-gradient-to-b from-defaultGreen to-transparent rounded-t-lg'>
-          <h1 className='text-3xl font-semibold'>{t('pricing.plans.title-1')}</h1>
-          <h2 className='text-3xl font-semibold mt-4'>
+          <h1 className='text-3xl text-white font-semibold'>{t('pricing.plans.title-1')}</h1>
+          <h2 className='text-3xl text-white font-semibold mt-4'>
             {inputChecked ? `${annually.price1}/yr` : `${monthly.price1}/mo`}
           </h2>
         </div>
-        <ul className='space-y-4 py-6 pl-8'>
+        <ul className='space-y-4 py-6 pl-8 font-semibold'>
           <li className='flex align-items: center;'>
             <AiOutlineCheckCircle style={defaultCheckedIcon} />{' '}
             <span className='relative -top-0.5 text-base'>{t('pricing.plans.custom-features.table-1.feature-1')}</span>
@@ -74,15 +74,15 @@ export default function PriceList({ inputChecked }) {
       </div>
       <div className='w-72 sm:w-96 border-defaultBlue lg:mx-6 border-4 my-14 lg:mt-0 rounded-2xl relative lg:-top-8'>
         <div className='py-6 bg-gradient-to-b from-defaultBlue to-transparent rounded-t-lg'>
-          <span className='absolute -top-4 w-[150px] left-0 right-0 ml-auto mr-auto bg-defaultPurple py-px px-4 rounded-md'>
+          <span className='absolute -top-4 w-[150px] left-0 right-0 ml-auto mr-auto bg-defaultPurple py-px px-4 rounded-md text-white'>
             {t('pricing.plans.recommended')}
           </span>
-          <h1 className='text-3xl font-semibold'>{t('pricing.plans.title-2')}</h1>
-          <h2 className='text-3xl font-semibold mt-4'>
+          <h1 className='text-3xl text-white font-semibold'>{t('pricing.plans.title-2')}</h1>
+          <h2 className='text-3xl text-white font-semibold mt-4'>
             {inputChecked ? `${annually.price2}/yr` : `${monthly.price2}/mo`}
           </h2>
         </div>
-        <ul className='space-y-4 py-6 pl-8'>
+        <ul className='space-y-4 py-6 pl-8 font-semibold'>
           <li className='flex align-items: center;'>
             <AiOutlineCheckCircle style={mainCheckedIcon} />{' '}
             <span className='relative -top-0.5 text-base ml-1'>
@@ -128,12 +128,12 @@ export default function PriceList({ inputChecked }) {
       </div>
       <div className='w-72 sm:w-96 flex flex-col border-defaultGreen border-4 rounded-2xl'>
         <div className='py-6 bg-gradient-to-b from-defaultGreen to-transparent rounded-t-lg'>
-          <h1 className='text-3xl font-semibold'>{t('pricing.plans.title-3')}</h1>
-          <h2 className='text-3xl font-semibold mt-4'>
+          <h1 className='text-3xl text-white font-semibold'>{t('pricing.plans.title-3')}</h1>
+          <h2 className='text-3xl text-white font-semibold mt-4'>
             {inputChecked ? `${annually.price3}/yr` : `${monthly.price3}/mo`}
           </h2>
         </div>
-        <ul className='space-y-4 py-6 pl-8'>
+        <ul className='space-y-4 py-6 pl-8 font-semibold'>
           <li className='flex align-items: center;'>
             <AiOutlineCheckCircle style={defaultCheckedIcon} />{' '}
             <span className='relative -top-0.5 text-base'>

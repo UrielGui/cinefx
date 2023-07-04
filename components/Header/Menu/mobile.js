@@ -5,14 +5,24 @@ import { Link } from 'react-scroll';
 import Link2 from 'next/link';
 import { AiOutlineMenu } from 'react-icons/ai';
 
-export default function MobileMenu() {
+export default function MobileMenu({ resultThemeMode, resolvedTheme }) {
   const { t } = useTranslation();
   const [openMenu, setOpenMenu] = useState(false);
   return (
-    <div className='xl:hidden flex text-base py-6 default-container'>
+    <div className='xl:hidden flex text-base py-6 default-container bg-defaultBlue dark:bg-defaultBlack2'>
       <div className='flex flex-grow place-items-center'>
         <span className='px-2'>
-          <Image src='/img/logo.png' alt={t('head.title')} width={180} height={100} />
+          <Image
+            className='relative top-0.5'
+            src={
+              resultThemeMode !== undefined && resultThemeMode !== null
+                ? resultThemeMode[resolvedTheme]
+                : '/img/dark-logo.png'
+            }
+            alt={t('head.title')}
+            width={180}
+            height={100}
+          />
         </span>
       </div>
       <div className='flex'>

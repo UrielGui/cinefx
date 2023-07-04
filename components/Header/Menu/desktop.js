@@ -3,15 +3,25 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-scroll';
 import Link2 from 'next/link';
 
-export default function DesktopMenu() {
+export default function DesktopMenu({ resultThemeMode, resolvedTheme }) {
   const { t } = useTranslation();
   return (
-    <div className='hidden xl:flex text-lg place-items-center pr-16'>
-      <div className='py-6 bg-defaultBlack3 px-16'>
-        <Image className='relative top-0.5' src='/img/logo.png' alt={t('head.title')} width={180} height={100} />
+    <div className='hidden xl:flex text-lg place-items-center pr-16' media='(prefers-color-scheme: light)'>
+      <div className='py-6 bg-defaultBlue dark:bg-defaultBlack3 px-16'>
+        <Image
+          className='relative top-0.5'
+          src={
+            resultThemeMode !== undefined && resultThemeMode !== null
+              ? resultThemeMode[resolvedTheme]
+              : '/img/dark-logo.png'
+          }
+          alt={t('head.title')}
+          width='180'
+          height='36'
+        />
       </div>
       <div className='flex flex-grow'>
-        <nav className='flex text-white w-full mt-1 pl-4'>
+        <nav className='flex text-defaultBlack dark:text-inherit w-full mt-1 pl-4'>
           <ul className='flex px-4 flex-grow place-items-center'>
             <li className='px-6 cursor-pointer hover:opacity-80'>
               <Link to='about' smooth={true}>

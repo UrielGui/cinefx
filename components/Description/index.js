@@ -13,10 +13,13 @@ export default function Description() {
 
   SwiperCore.use([Autoplay]);
   return (
-    <section id='description' className='py-8 text-base'>
+    <section
+      id='description'
+      className='py-8 text-base bg-lightBG dark:bg-defaultBlack2 text-defaultBlack dark:text-inherit'
+    >
       <div className='default-container'>
         <div className='text-center flex flex-col items-center py-6'>
-          <h1 className='text-3xl'>{t('description.title')}</h1>
+          <h1 className='text-4xl'>{t('description.title')}</h1>
           <p className='md:w-2/4 mt-3'>{t('description.description')}</p>
         </div>
       </div>

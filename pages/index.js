@@ -1,3 +1,4 @@
+import { useThemeMode } from '../hooks/useThemeMode';
 import Head from 'next/head';
 import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
@@ -13,6 +14,7 @@ import Footer from '../components/Footer';
 
 export default function Home() {
   const { t } = useTranslation();
+  useThemeMode();
   return (
     <>
       <Head>
@@ -34,6 +36,7 @@ export default function Home() {
         className='absolute w-[28%] h-[200vh] top-[860px] left-auto right-[0%] max-w-md max-h-[120rem] -z-50'
         width={200}
         height={100}
+        priority
       />
       <HeroSection />
       <Description />

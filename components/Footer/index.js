@@ -6,7 +6,7 @@ export default function Footer() {
   const date = new Date();
   const year = date.getFullYear();
   return (
-    <footer className='bg-defaultBlack2'>
+    <footer className='bg-defaultBlue dark:bg-defaultBlack2'>
       <div className='default-container'>
         <div className='flex text-base py-6 flex-col lg:flex-row place-items-center'>
           <div className='flex flex-grow place-items-center'>
@@ -16,7 +16,7 @@ export default function Footer() {
             </span>
           </div>
           <div className='flex'>
-            <Image src='/img/payments-method.png' alt='payments method' width={300} height={100} />
+            <Image priority src='/img/payments-method.png' alt='payments method' width={300} height={28} />
           </div>
         </div>
       </div>

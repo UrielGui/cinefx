@@ -7,13 +7,16 @@ export default function Pricing() {
   const [inputChecked, setInputChecked] = useState(null);
   const { t } = useTranslation();
   return (
-    <section id='pricing' className='py-8 text-base'>
+    <section
+      id='pricing'
+      className='py-8 text-base bg-lightBG dark:bg-defaultBlack2 text-defaultBlack dark:text-inherit'
+    >
       <div className='default-container'>
         <div className='text-center flex flex-col items-center py-6'>
-          <h1 className='text-3xl'>{t('pricing.title')}</h1>
+          <h1 className='text-4xl'>{t('pricing.title')}</h1>
           <p className='mt-3'>{t('pricing.description')}</p>
           <div className='flex mt-10'>
-            <span>{t('pricing.option-1')}</span>
+            <span className='font-semibold'>{t('pricing.option-1')}</span>
             <div className='relative inline-block w-28 mr-2 align-middle select-none mx-4 mr-4 -top-2'>
               <input
                 type='checkbox'
@@ -28,7 +31,7 @@ export default function Pricing() {
                 className='toggle-label block overflow-hidden h-10 rounded-full bg-defaultCyan cursor-pointer'
               />
             </div>
-            <span>{t('pricing.option-2')}</span>
+            <span className='font-semibold'>{t('pricing.option-2')}</span>
           </div>
           <PriceList inputChecked={inputChecked} />
         </div>
