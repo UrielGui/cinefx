@@ -2,18 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSans-Regular.ttf');
-}
-
 @media (max-width: 640px) {
   .default-container {
     padding-right: 2rem;
     padding-left: 2rem;
   }
 }
-
 ,
 .toggle-checkbox {
   border-color: #10a4c4;

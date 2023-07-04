@@ -1,4 +1,5 @@
 const plugin = require('tailwindcss/plugin');
+const { fontFamily } = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
@@ -19,7 +20,7 @@ module.exports = {
         lightBG2: '#DDEBF8',
       },
       fontFamily: {
-        sans: ['OpenSans', 'sans-serif'],
+        sans: ['"Open Sans"'],
       },
       backgroundImage: {
         'hero-section-background': "url('/img/hero-section-background.png')",
