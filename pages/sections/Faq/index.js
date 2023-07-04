@@ -39,7 +39,7 @@ export default function Faq() {
         priority
         src='/img/green-light-background.png'
         alt={t('about.step-by-step-img-alt-1')}
-        className='absolute w-1/5 h-[100vh] left-auto right-[0%] max-w-sm max-h-[60rem] z-40'
+        className='absolute w-1/5 h-[100vh] left-auto right-[0%] max-w-sm max-h-[60rem] z-40 hidden dark:block'
         width={200}
         height={100}
       />
