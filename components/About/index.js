@@ -4,10 +4,10 @@ import { useTranslation } from 'react-i18next';
 export default function About() {
   const { t } = useTranslation();
   return (
-    <section id='about' className='py-12'>
+    <section id='about' className='py-12 bg-lightBG dark:bg-defaultBlack2 text-defaultBlack dark:text-inherit'>
       <div className='default-container'>
         <div className='w-full md:w-11/12 flex items-center md:items-start flex-col'>
-          <h1 className='text-3xl'>{t('about.title')}</h1>
+          <h1 className='text-4xl'>{t('about.title')}</h1>
           <p className='mt-6'>{t('about.description-1')}</p>
           <p className='mt-6'>{t('about.description-2')}</p>
           <p className='mt-6'>{t('about.description-3')}</p>
@@ -18,7 +18,7 @@ export default function About() {
               src='/img/step-by-step/step-1.png'
               alt={t('about.step-by-step-img-alt-1')}
               width={200}
-              height={100}
+              height={200}
             />
             <p className='mt-2'>{t('about.step-by-step-1')}</p>
           </div>
@@ -27,7 +27,7 @@ export default function About() {
               src='/img/step-by-step/step-2.png'
               alt={t('about.step-by-step-img-alt-2')}
               width={200}
-              height={100}
+              height={200}
             />
             <p className='mt-2'>{t('about.step-by-step-2')}</p>
           </div>
@@ -36,7 +36,7 @@ export default function About() {
               src='/img/step-by-step/step-3.png'
               alt={t('about.step-by-step-img-alt-3')}
               width={200}
-              height={100}
+              height={200}
             />
             <p className='mt-2'>{t('about.step-by-step-3')}</p>
           </div>
