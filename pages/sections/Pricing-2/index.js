@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineCheckCircle } from 'react-icons/ai';
 import { useTheme } from 'next-themes';
-import { useThemeModeImage } from '../../hooks/useThemeMode';
+import { useThemeModeImage } from '../../../hooks/useThemeMode';
 
 export default function Pricing2() {
   const { t } = useTranslation();

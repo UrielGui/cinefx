@@ -23,7 +23,7 @@ export default function PriceList({ inputChecked }) {
 
   return (
     <div className='w-full flex justify-between mt-8 lg:mt-20 lg:flex-row flex-col place-items-center'>
-      <div className='w-72 sm:w-96 flex flex-col border-defaultGreen border-4 rounded-2xl'>
+      <div className='w-72 sm:w-96 flex flex-col border-defaultGreen border-4 rounded-2xl z-50'>
         <div className='py-6 bg-gradient-to-b from-defaultGreen to-transparent rounded-t-lg'>
           <h1 className='text-3xl text-white font-semibold'>{t('pricing.plans.title-1')}</h1>
           <h2 className='text-3xl text-white font-semibold mt-4'>
@@ -72,7 +72,7 @@ export default function PriceList({ inputChecked }) {
           </button>
         </Link>
       </div>
-      <div className='w-72 sm:w-96 border-defaultBlue lg:mx-6 border-4 my-14 lg:mt-0 rounded-2xl relative lg:-top-8'>
+      <div className='w-72 sm:w-96 border-defaultBlue lg:mx-6 border-4 my-14 lg:mt-0 rounded-2xl relative lg:-top-8 z-50'>
         <div className='py-6 bg-gradient-to-b from-defaultBlue to-transparent rounded-t-lg'>
           <span className='absolute -top-4 w-[150px] left-0 right-0 ml-auto mr-auto bg-defaultPurple py-px px-4 rounded-md text-white'>
             {t('pricing.plans.recommended')}
@@ -126,7 +126,7 @@ export default function PriceList({ inputChecked }) {
           </button>
         </Link>
       </div>
-      <div className='w-72 sm:w-96 flex flex-col border-defaultGreen border-4 rounded-2xl'>
+      <div className='w-72 sm:w-96 flex flex-col border-defaultGreen border-4 rounded-2xl z-50'>
         <div className='py-6 bg-gradient-to-b from-defaultGreen to-transparent rounded-t-lg'>
           <h1 className='text-3xl text-white font-semibold'>{t('pricing.plans.title-3')}</h1>
           <h2 className='text-3xl text-white font-semibold mt-4'>

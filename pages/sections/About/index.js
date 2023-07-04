@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 export default function About() {
   const { t } = useTranslation();
   return (
-    <section id='about' className='py-12 bg-lightBG dark:bg-defaultBlack2 text-defaultBlack dark:text-inherit'>
+    <section id='about' className='py-12 bg-lightBG dark:bg-defaultBlack text-defaultBlack dark:text-inherit'>
       <div className='default-container'>
         <div className='w-full md:w-11/12 flex items-center md:items-start flex-col'>
           <h1 className='text-4xl'>{t('about.title')}</h1>

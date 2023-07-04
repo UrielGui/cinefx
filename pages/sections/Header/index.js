@@ -1,7 +1,7 @@
 import DesktopMenu from './Menu/desktop';
 import MobileMenu from './Menu/mobile';
 import { useTheme } from 'next-themes';
-import { useThemeModeImage } from '../../hooks/useThemeMode';
+import { useThemeModeImage } from '../../../hooks/useThemeMode';
 
 export default function Header() {
   const { resolvedTheme } = useTheme();

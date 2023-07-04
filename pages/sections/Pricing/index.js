@@ -9,7 +9,7 @@ export default function Pricing() {
   return (
     <section
       id='pricing'
-      className='py-8 text-base bg-lightBG dark:bg-defaultBlack2 text-defaultBlack dark:text-inherit'
+      className='py-8 text-base bg-lightBG dark:bg-defaultBlack text-defaultBlack dark:text-inherit'
     >
       <div className='default-container'>
         <div className='text-center flex flex-col items-center py-6'>

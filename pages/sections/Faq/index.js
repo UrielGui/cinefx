@@ -34,12 +34,12 @@ export default function Faq() {
   }
 
   return (
-    <section id='faq' className='py-10 text-base bg-lightBG dark:bg-defaultBlack2 text-defaultBlack dark:text-inherit'>
+    <section id='faq' className='py-10 text-base bg-lightBG dark:bg-defaultBlack text-defaultBlack dark:text-inherit'>
       <Image
         priority
         src='/img/green-light-background.png'
         alt={t('about.step-by-step-img-alt-1')}
-        className='absolute w-1/5 h-[100vh] left-auto right-[0%] max-w-sm max-h-[60rem] -z-50'
+        className='absolute w-1/5 h-[100vh] left-auto right-[0%] max-w-sm max-h-[60rem] z-40'
         width={200}
         height={100}
       />

@@ -1,5 +1,5 @@
-import '../styles/globals.css';
-// import '../public/css/main.css';
+import '../styles/globals.css'; // use to develop
+// import '../public/css/main.css'; // use to production
 import '../i18n';
 import { ThemeProvider } from 'next-themes';
 import CustomFont from '@next/font/local';
