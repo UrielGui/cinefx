@@ -1,11 +1,8 @@
-import { useTranslation } from 'react-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Autoplay } from 'swiper';
 import 'swiper/css';
 
 export default function Description() {
-  const { t } = useTranslation();
-
   function importDir(dir) {
     return dir.keys().map(dir);
   }
