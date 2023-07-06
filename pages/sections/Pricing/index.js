@@ -17,7 +17,7 @@ export default function Pricing() {
           <p className='mt-3'>{t('pricing.description')}</p>
           <div className='flex mt-20'>
             <span className='font-semibold'>{t('pricing.option-1')}</span>
-            <div className='relative inline-block w-28 mr-2 align-middle select-none mx-4 mr-4 -top-2'>
+            <div className='relative inline-block w-28 align-middle select-none mx-4 mr-4 -top-2'>
               <input
                 type='checkbox'
                 name='toggle'
