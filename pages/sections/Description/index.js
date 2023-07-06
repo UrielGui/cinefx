@@ -18,9 +18,11 @@ export default function Description() {
       className='py-8 text-base bg-lightBG dark:bg-defaultBlack text-defaultBlack dark:text-inherit'
     >
       <div className='default-container'>
-        <div className='text-center flex flex-col items-center py-6'>
-          <h1 className='text-4xl'>{t('description.title')}</h1>
-          <p className='md:w-2/4 mt-3'>{t('description.description')}</p>
+        <div className='text-center flex flex-col items-center py-8 mb-14'>
+          <h1 className='text-3xl md:text-4xl'>Explore the most popular titles by CineFX</h1>
+          <p className='w-full mt-3 md:text-2xl'>
+            Enjoy official and exclusive CineFlix titles, anywhere you are. Watch movies, series and more!
+          </p>
         </div>
       </div>
       <Swiper
@@ -54,7 +56,7 @@ export default function Description() {
         navigation={false}
       >
         <div className='flex justify-center overflow-hidden relative'>
-          <div className='w-full flex w-max items-center space-x-16'>
+          <div className='flex w-max items-center space-x-16'>
             {imgFolder.map((img, i) => {
               return (
                 <SwiperSlide key={i}>
