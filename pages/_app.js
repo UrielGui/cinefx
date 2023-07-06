@@ -8,7 +8,7 @@ const openSans = CustomFont({
   variable: '--font-openSans',
 });
 
-function MyApp({ Component, pageProps }) {
+function CineFx({ Component, pageProps }) {
   return (
     <ThemeProvider attribute='class'>
       <main className={`${openSans.variable}`}>
@@ -18,4 +18,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default CineFx;
