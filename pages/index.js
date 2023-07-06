@@ -2,15 +2,15 @@ import { useThemeMode } from '../hooks/useThemeMode';
 import Head from 'next/head';
 import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
-import Header from './sections/Header';
-import HeroSection from './sections/HeroSection';
-import Description from './sections/Description';
-import About from './sections/About';
-import Pricing from './sections/Pricing';
-import Pricing2 from './sections/Pricing-2';
-import Faq from './sections/Faq';
-import Contact from './sections/Contact';
-import Footer from './sections/Footer';
+import Header from '../sections/Header';
+import HeroSection from '../sections/HeroSection';
+import Description from '../sections/Description';
+import About from '../sections/About';
+import Pricing from '../sections/Pricing';
+import Pricing2 from '../sections/Pricing-2';
+import Faq from '../sections/Faq';
+import Contact from '../sections/Contact';
+import Footer from '../sections/Footer';
 
 export default function Home() {
   const { t } = useTranslation();

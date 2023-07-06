@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import { Accordion, AccordionHeader, AccordionBody } from '@material-tailwind/react';
 import { useTheme } from 'next-themes';
-import { useThemeModeItems } from '../../../hooks/useThemeMode';
+import { useThemeModeItems } from '../../hooks/useThemeMode';
 
 export default function Faq() {
   const { t } = useTranslation();
