@@ -12,10 +12,10 @@ export default function Pricing() {
       className='py-8 text-base bg-lightBG dark:bg-defaultBlack text-defaultBlack dark:text-inherit'
     >
       <div className='default-container'>
-        <div className='text-center flex flex-col items-center py-6'>
+        <div className='text-center flex flex-col items-center py-8'>
           <h1 className='text-4xl'>{t('pricing.title')}</h1>
           <p className='mt-3'>{t('pricing.description')}</p>
-          <div className='flex mt-10'>
+          <div className='flex mt-20'>
             <span className='font-semibold'>{t('pricing.option-1')}</span>
             <div className='relative inline-block w-28 mr-2 align-middle select-none mx-4 mr-4 -top-2'>
               <input

@@ -20,7 +20,7 @@ export default function About() {
               width={200}
               height={200}
             />
-            <p className='mt-2'>{t('about.step-by-step-1')}</p>
+            <p className='mt-6'>{t('about.step-by-step-1')}</p>
           </div>
           <div className='w-full md:w-3/12 flex flex-col items-center'>
             <Image
@@ -29,7 +29,7 @@ export default function About() {
               width={200}
               height={200}
             />
-            <p className='mt-2'>{t('about.step-by-step-2')}</p>
+            <p className='mt-6'>{t('about.step-by-step-2')}</p>
           </div>
           <div className='w-ful md:w-3/12 flex flex-col items-center'>
             <Image
@@ -38,7 +38,7 @@ export default function About() {
               width={200}
               height={200}
             />
-            <p className='mt-2'>{t('about.step-by-step-3')}</p>
+            <p className='mt-6'>{t('about.step-by-step-3')}</p>
           </div>
         </div>
       </div>
