@@ -24,19 +24,22 @@ export default function Home() {
       </Head>
       <Header />
       <Image
+        priority
+        draggable='false'
         src='/img/blue-light-background.png'
         alt=''
-        className='absolute w-[28%] h-[200vh] top-[860px] max-w-md max-h-[120rem] z-40 hidden dark:block'
+        className='absolute w-[28%] h-[200vh] top-[860px] max-w-md max-h-[120rem] hidden dark:block'
         width={200}
         height={100}
       />
       <Image
+        priority
+        draggable='false'
         src='/img/pink-light-background.png'
         alt=''
-        className='absolute w-[28%] h-[200vh] top-[860px] left-auto right-[0%] max-w-md max-h-[120rem] z-40 hidden dark:block'
+        className='absolute w-[28%] h-[200vh] top-[860px] left-auto right-[0%] max-w-md max-h-[120rem] hidden dark:block'
         width={200}
         height={100}
-        priority
       />
       <HeroSection />
       <Description />

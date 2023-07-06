@@ -43,6 +43,7 @@ export default function Faq() {
     <section id='faq' className='py-10 text-base bg-lightBG dark:bg-defaultBlack text-defaultBlack dark:text-inherit'>
       <Image
         priority
+        draggable='false'
         alt=''
         src='/img/green-light-background.png'
         className='absolute w-1/5 h-[100vh] left-auto right-[0%] max-w-sm max-h-[60rem] z-40 hidden dark:block'
