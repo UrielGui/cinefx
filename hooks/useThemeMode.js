@@ -5,13 +5,13 @@ export function useThemeMode() {
   const { setTheme } = useTheme();
 
   useEffect(() => {
-    setTheme('dark'); // use "dark" to activate dark mode or "light" to light mode
+    setTheme('light'); // use "dark" to activate dark mode or "light" to light mode
   });
 
   return true;
 }
 
-export function useThemeModeImage(lightImage, darkImage) {
+export function useThemeModeItems(lightItem, darkItem) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -23,8 +23,8 @@ export function useThemeModeImage(lightImage, darkImage) {
   }
 
   let themeMode = {
-    light: lightImage,
-    dark: darkImage,
+    light: lightItem,
+    dark: darkItem,
   };
 
   return themeMode;

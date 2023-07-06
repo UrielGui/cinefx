@@ -25,14 +25,14 @@ export default function Home() {
       <Header />
       <Image
         src='/img/blue-light-background.png'
-        alt={t('about-img-alt-1')}
+        alt=''
         className='absolute w-[28%] h-[200vh] top-[860px] max-w-md max-h-[120rem] z-40 hidden dark:block'
         width={200}
         height={100}
       />
       <Image
         src='/img/pink-light-background.png'
-        alt={t('about.step-by-step-img-alt-1')}
+        alt=''
         className='absolute w-[28%] h-[200vh] top-[860px] left-auto right-[0%] max-w-md max-h-[120rem] z-40 hidden dark:block'
         width={200}
         height={100}

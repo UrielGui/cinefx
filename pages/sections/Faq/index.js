@@ -3,10 +3,11 @@ import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import { Accordion, AccordionHeader, AccordionBody } from '@material-tailwind/react';
 import { useTheme } from 'next-themes';
+import { useThemeModeItems } from '../../../hooks/useThemeMode';
 
 export default function Faq() {
   const { t } = useTranslation();
-  const { theme } = useTheme();
+  const { resolvedTheme } = useTheme();
   const [open, setOpen] = useState(1);
 
   const handleOpen = (value) => {
@@ -18,6 +19,8 @@ export default function Faq() {
     unmount: { scale: 0.9 },
   };
 
+  let resultThemeMode = useThemeModeItems('#333', '#fff');
+
   function Icon({ id, open }) {
     return (
       <svg
@@ -28,7 +31,10 @@ export default function Faq() {
         fill='none'
         viewBox='0 0 24 24'
       >
-        <path d='M14 0L0 0L7 11L14 0Z' fill={theme === 'light' ? '#333' : '#fff'} />
+        <path
+          d='M14 0L0 0L7 11L14 0Z'
+          fill={resultThemeMode !== undefined && resultThemeMode !== null ? resultThemeMode[resolvedTheme] : '#333'}
+        />
       </svg>
     );
   }
@@ -37,8 +43,8 @@ export default function Faq() {
     <section id='faq' className='py-10 text-base bg-lightBG dark:bg-defaultBlack text-defaultBlack dark:text-inherit'>
       <Image
         priority
+        alt=''
         src='/img/green-light-background.png'
-        alt={t('about.step-by-step-img-alt-1')}
         className='absolute w-1/5 h-[100vh] left-auto right-[0%] max-w-sm max-h-[60rem] z-40 hidden dark:block'
         width={200}
         height={100}

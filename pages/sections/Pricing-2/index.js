@@ -3,13 +3,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineCheckCircle } from 'react-icons/ai';
 import { useTheme } from 'next-themes';
-import { useThemeModeImage } from '../../../hooks/useThemeMode';
+import { useThemeModeItems } from '../../../hooks/useThemeMode';
 
 export default function Pricing2() {
   const { t } = useTranslation();
   const { resolvedTheme } = useTheme();
   const defaultCheckedIcon = { color: '#0C7CE3', marginRight: '5px', fontSize: '1.2em' };
-  let resultThemeMode = useThemeModeImage(
+  let resultThemeMode = useThemeModeItems(
     '/img/management-panel_light_mode.png',
     '/img/management-panel_dark_mode.png'
   );
@@ -24,7 +24,7 @@ export default function Pricing2() {
           <p className='mt-3'>{t('pricing-2.description')} </p>
         </div>
         <div className='min-w-full mt-8'>
-          <div className='flex text-base md:flex-row flex-col flex-col-reverse'>
+          <div className='flex text-base md:flex-row flex-col-reverse'>
             <div className='flex flex-grow flex-col md:place-items-start place-items-center font-semibold'>
               <h2>{t('pricing-2.description-2')}</h2>
               <ul className='md:space-y-2 mt-6'>
