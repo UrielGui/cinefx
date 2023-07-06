@@ -1,8 +1,11 @@
+import { useTranslation } from 'react-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Autoplay } from 'swiper';
 import 'swiper/css';
 
 export default function Description() {
+  const { t } = useTranslation();
+
   function importDir(dir) {
     return dir.keys().map(dir);
   }
@@ -16,10 +19,8 @@ export default function Description() {
     >
       <div className='default-container'>
         <div className='text-center flex flex-col items-center py-8 mb-14'>
-          <h1 className='text-3xl md:text-4xl'>Explore the most popular titles by CineFX</h1>
-          <p className='w-full mt-3 md:text-2xl'>
-            Enjoy official and exclusive CineFlix titles, anywhere you are. Watch movies, series and more!
-          </p>
+          <h1 className='text-3xl md:text-4xl'>{t('description.title')}</h1>
+          <p className='w-full mt-3 md:text-2xl'>{t('description.description')}</p>
         </div>
       </div>
       <Swiper
